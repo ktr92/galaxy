@@ -70,7 +70,7 @@
   font-family: 'Circe';
   src: url('../fonts/Circe-Light.woff2') format('woff2'),
       url('../fonts/Circe-Light.woff') format('woff');
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -977,13 +977,25 @@ color: #FFFFFF;
 }
 .btn {
 }
-
-
-.accblock {
+.accblock__figure {
+	position: absolute;
+	right: -30px;
+	top: 44px;
 }
+
+/* .accblock {
+	background-image: url(../img/bg7.svg);
+	background-position: left 90% top 44px;
+	background-repeat: no-repeat;
+} */
 .accblock__wrapper {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
 .accblock__left {
+	width: calc(100% - 665px);
+	padding-right: 50px;
 }
 .accnblockk__content {
 }
@@ -1003,4 +1015,94 @@ margin-top: 15px;
 margin-bottom: 42px;
 }
 .accblock__right {
+}
+
+.accordion__item {
+	border-bottom: 1px solid #D9D9D9;
+	max-width: 593px;
+}
+.accordion__item .accordion__title {
+	position: relative;
+	display: block;
+	padding: 22px 0;
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 100%;
+	
+	color: #32445F;
+	
+  cursor: pointer;
+}
+
+.accordion__item .accordion__title .accordion__arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%); 
+	right: 0;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+.accordion__item .accordion__title .accordion__rotate  {
+	transform: rotate(180deg) translateY(50%);
+	opacity: 0.5;
+}
+.accordion__item .accordion__content {
+	padding: 0 0 24px 0;
+	font-family: 'Circe';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 100%;
+	display: none;
+	color: rgba(50, 68, 95, 0.7);
+}
+.accordion__item .accordion__arrow-item {
+	font-weight: 700;
+	line-height: 1;
+}
+
+.imgblock {
+	position: relative;
+	margin-top: 115px;
+	margin-bottom: 148px;
+	.accblock__figure {
+		left: -33px;
+		bottom: -27px;
+		top: unset;
+		right: unset;
+	}	
+	.accblock__title {
+		font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 100%;
+/* or 26px */
+
+text-transform: uppercase;
+
+color: #32445F;
+	}
+
+	.imgblock__text {
+		p {
+			font-family: 'Circe';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 140%;
+			color: rgba(50, 68, 95, 0.7);
+		}
+	}
+
+	.accblock__right {
+		width: calc(100% - 665px);
+		margin-left: 30px;
+		max-width: 655px;
+	}
+	.accblock__left {
+		width: initial;
+	}
 }
