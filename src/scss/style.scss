@@ -1106,3 +1106,146 @@ color: #32445F;
 		width: initial;
 	}
 }
+
+
+.contacts {
+	height: 720px;
+	position: relative;
+	margin-bottom: 43px;
+
+	border-top: 2px solid rgba(50, 68, 95, 0.1);
+
+	.container {
+		height: 100%;
+	}
+}
+.contacts__wrapper {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.contacts__main {
+	width: 50%;
+}
+.contacts__map {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+}
+.contacts__content {
+	max-width: 545px;
+}
+.contacts__phone {
+	margin-bottom: 30px;
+	a {
+		font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 100%;
+/* identical to box height, or 36px */
+
+
+color: #32445F;
+	}
+}
+.contacts__text {
+	font-family: 'Circe';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+margin-bottom: 12px;
+
+color: rgba(50, 68, 95, 0.7);
+
+a {
+	color: rgba(50, 68, 95, 0.7);
+}
+}
+.contacts__socials {
+	margin: 30px 0;
+	display: flex;
+}
+.contacts__socitem {
+	margin-right: 6px;
+	a {
+		width: 46px;
+height: 46px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+border: 1px solid rgba(50, 68, 95, 0.15);
+	&:hover {
+		background: $main;
+		path {
+			fill: #fff;
+		}
+	}
+	&:focus {
+		background: $main;
+		opacity: 0.7;
+		path {
+			fill: #fff;
+		}
+	}
+	}
+}
+.contacts__rekv {
+	font-family: 'Circe';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: rgba(50, 68, 95, 0.7);
+margin-bottom: 20px;
+position: relative;
+overflow: hidden;
+}
+.contacts__rekv:after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 45%;
+	background: rgba(50, 68, 95, 0.1);
+	height: 2px;
+	margin-left: 16px;
+}
+
+.contacts__title {
+	
+
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+margin-bottom: 15px;
+
+color: rgba(50, 68, 95, 0.9);
+}
+.contacts__text_dark {
+}
+.contacts__footer {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 33px;
+	border-top: 2px solid rgba(50, 68, 95, 0.1);
+}
+.contacts__copy {
+	color: rgba(50, 68, 95, 0.7);
+	font-family: 'Circe';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+
+}
+.contacts__dev {
+}
