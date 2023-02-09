@@ -209,6 +209,9 @@ button.close {
         font-weight: bold;
       }
   }
+  .check label:before {
+    background-color: $main;
+  }
   .check input[type=checkbox]:checked+label:before {
     background-image: url('../img/checked_modal.svg');
     background-position: 50%;
@@ -354,3 +357,4 @@ color: rgba(50, 68, 95, 0.7);
     margin-bottom: 19px;
   }
 }
+
