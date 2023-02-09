@@ -1,5 +1,3 @@
-function initFE() {
-  }
 
 $(document).ready(function() { 
   $("input[type=tel]").mask("7 (999) 999-99-99");
@@ -24,4 +22,26 @@ $(document).ready(function() {
 	//END
 	
 });
+
+$("a.scrollTo").click(function (e) {
+	e.preventDefault()
+	var destination = $($(this).attr("href")).offset().top - 90;
+	$("html:not(:animated),body:not(:animated)").animate({
+		scrollTop: destination
+	}, 1100);
+	return false;
+});
+
+
+window.addEventListener('scroll', (event) => {
+	scroll = window.scrollY
+	if (scroll >= 1200) {
+		document.getElementById("gototop").classList.add('active')
+	} else {
+		document.getElementById("gototop").classList.remove('active')
+	}
+
+});
+
+
 })

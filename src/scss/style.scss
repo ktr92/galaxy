@@ -1123,9 +1123,21 @@ color: #32445F;
 	display: flex;
 	align-items: center;
 	height: 100%;
+	position: relative;
+
 }
+.contacts__icon {
+	z-index: 334;
+	position: absolute;top: 50%;
+	transform: translateY(-50%) translateX(50%);
+	right: 0;
+
+	
+}
+
 .contacts__main {
 	width: 50%;
+	position: relative;
 }
 .contacts__map {
 	position: absolute;
@@ -1248,4 +1260,36 @@ line-height: 140%;
 
 }
 .contacts__dev {
+}
+
+
+.gototop {
+	transition: all 0.3s ease;
+	position: fixed;
+	left: 92px;
+	bottom: 36px;
+	z-index: 999;
+	display: none;
+}
+
+.gototop.active {
+	display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	background: #F3F3F6;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $main;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #ccc;
 }
