@@ -858,7 +858,6 @@ color: rgba(50, 68, 95, 0.4);
 	transition: all 0.3s ease;
 
 	&:hover {
-		cursor: pointer;
 		filter: drop-shadow(10px 10px 40px rgba(50, 68, 95, 0.15));
 	}
 
@@ -870,6 +869,8 @@ color: rgba(50, 68, 95, 0.4);
 .servicecard__image {
 }
 .servicecard__img {
+ max-width: 88px;
+ min-width: 88px;
 }
 .servicecard__title {
 	margin-left: 28px;

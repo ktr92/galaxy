@@ -68,7 +68,7 @@
           <!-- /.headertop__left -->
           <div class="headertop__center">
             <div class="headertop__centeritems">
-              <div class="logo"><a href="/" class="logolink"><img src="img/logo.svg" alt=""></a></div>
+              <div class="logo"><div class="logolink"><img src="img/logo.svg" alt=""></div></div>
             </div>
             <div class="headertop__menu onlyMobile">
               <button class="menubtn">
@@ -535,7 +535,7 @@
                 <div class="pageform__check">
                   <div class="check">
                     <input type="checkbox" id="agree" checked="checked" value="Y">
-                    <label for="agree">Я согласен с&nbsp;<a href="#"> условиями обработки </a>&nbsp;моих персональных данных
+                    <label for="agree">Я согласен с&nbsp;<a href="#modal_privacy" data-toggle="modal"> условиями обработки </a>&nbsp;моих персональных данных
                     </label>
                   </div>
                 </div>
@@ -836,6 +836,30 @@
   </a>
 
 </main>
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_privacy'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Политика конфиденциальности</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
+              </svg>
+              
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modaltext">
+            <p>текст</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_text'>
   <div class="modal-dialog" role="document">
     <div class="modalwrapper">
@@ -974,7 +998,7 @@
               <div class="formblock__check">
                 <div class="check">
                   <input type="checkbox" id="agreemodal" checked="checked" value="Y">
-                  <label for="agreemodal">Я согласен с <a href="#">условиями обработки</a> моих персональных данных
+                  <label for="agreemodal">Я согласен с <a href="#modal_privacy" data-toggle="modal">условиями обработки</a> моих персональных данных
                   </label>
                 </div>
               </div><!-- /.formblock__check -->
