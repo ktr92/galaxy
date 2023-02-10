@@ -70,6 +70,13 @@
             <div class="headertop__centeritems">
               <div class="logo"><a href="/" class="logolink"><img src="img/logo.svg" alt=""></a></div>
             </div>
+            <div class="headertop__menu onlyMobile">
+              <button class="menubtn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </button>
+            </div>
             <!-- /.headertop__leftitems -->
           </div>
           <!-- /.headertop__left -->
@@ -143,7 +150,7 @@
     <div class="container">
         <div class="about__wrapper">
           <div class="about__left">
-            <div class="about__title"> <h2> <span class="color">Динамично развивающийся </span> IT-интегратор - поставщик решений, оборудования и услуг в области IT. </h2>
+            <div class="about__title"> <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s"> <span class="color">Динамично развивающийся </span> IT-интегратор - поставщик решений, оборудования и услуг в области IT. </h2>
             </div>
             <div class="about__text">
               <p>Ключевые компетенции компании ООО “Галактика” находятся в сферах телекоммуникаций, печати и расходных материалов, мультимедиа, программного обеспечения для предприятий самых разных масштабов и отраслей.
@@ -166,27 +173,25 @@
     <div class="container">
       <div class="partners__wrapper">
         <div class="partners__title">
-          <h2>Наши клиенты</h2>
+          <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Наши клиенты</h2>
         </div>
         <div class="partners__items">
           <div class="partners__item">
-            <div class="partners__img"><img src="img/komitet.jpg" alt=""></div>
+            <div class="partners__img"><img src="img/1.png" alt=""></div>
           </div>
           <div class="partners__item">
-            <div class="partners__img"><img src="img/VF_RF-2.jpg" alt=""></div>
+            <div class="partners__img"><img src="img/2.png" alt=""></div>
           </div>
           <div class="partners__item">
-            <div class="partners__img"><img src="img/central_base_customs_emb_n31595.jpg" alt=""></div>
+            <div class="partners__img"><img src="img/3.png" alt=""></div>
           </div>
           <div class="partners__item">
-            <div class="partners__img"><img src="img/Mintrud.jpg" alt=""></div>
+            <div class="partners__img"><img src="img/4.png" alt=""></div>
           </div>
           <div class="partners__item">
-            <div class="partners__img"><img src="img/nicki-logo2.jpg" alt=""></div>
+            <div class="partners__img"><img src="img/5.png" alt=""></div>
           </div>
-          <div class="partners__item">
-            <div class="partners__img"><img src="img/scale_1200.jpg" alt=""></div>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -196,7 +201,7 @@
     <div class="container">
       <div class="products__wrapper">
         <div class="products__title">
-          <h2>Оборудование</h2>
+          <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Оборудование</h2>
         </div>
         <div class="products__text">
           <p>Поставка оборудования - это одно из направлений деятельности нашей
@@ -525,7 +530,7 @@
                     <div class="pageform__input"><input type="text" placeholder="Ваше имя"></div>
                     <div class="pageform__input"><input class="input-error" value="123" type="tel" placeholder="Телефон"></div>
                     <div class="pageform__input"><input type="text" placeholder="Название компании"></div>
-                    <div class="pageform__input"><button class="btn">Отправить</button></div>
+                    <div class="pageform__input pageform__input_btn"><button class="btn">Отправить</button></div>
                 </div>
                 <div class="pageform__check">
                   <div class="check">
@@ -546,7 +551,7 @@
   <section id="block5" class="service">
     <div class="container">
       <div class="service__title">
-        <h2>Сервис</h2>
+        <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Сервис</h2>
       </div>
       <div class="service__items">
         <div class="service__item">
@@ -631,7 +636,8 @@
       <div class="itblock__wrapper">
         <div class="itblock__left">
           <div class="itblock__image">
-            <div class="itblock__img"><img src="img/img3.png" alt=""></div>
+            <div class="itblock__img onlyDesktop"><img src="img/img3.png" alt=""></div>
+            <div class="itblock__img onlyMobile"><img src="img/img3_mb.png" alt=""></div>
           </div>
         </div>
         <div class="itblock__right">
@@ -777,7 +783,8 @@
 
         <div class="contacts__main">
           <div class="contacts__icon">
-            <img src="img/icon.svg" alt="">
+            <img src="img/icon.svg" alt="" class="onlyDesktop">
+            <img src="img/icon_mb.svg" alt="" class="onlyMobile">
           </div>
   
           <div class="contacts__content">
@@ -808,7 +815,7 @@
             <div class="contacts__text">КПП: 771701001</div>
 
             <div class="contacts__footer">
-              <div class="contacts__copy">© 2023, ООО “Галактика” . Все права защищены</div>
+              <div class="contacts__copy">© 2023, ООО “Галактика”. <span>Все права защищены</span> </div>
               <div class="contacts__dev"><a href="//empis.ru" target="_blank"><img src="img/empis.svg" alt=""></a></div>
             </div>
           </div>
@@ -816,8 +823,8 @@
 
        
 
-        <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae5afad6690e57af29d856d3ab901a233e6aae2e7ecb1a4513c951693b7ad6cc1&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+        <div class="contacts__map" id="YaMaps">
+        
         </div>
       </div>
     </div>
@@ -829,6 +836,36 @@
   </a>
 
 </main>
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_text'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Компьютерная и печатная техника</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
+              </svg>
+              
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modaltext">
+            <p>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+              <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия.
+              Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации форм развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития.</p>
+              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
+              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
+              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
+              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_product_1'>
   <div class="modal-dialog" role="document">
     <div class="modalwrapper">

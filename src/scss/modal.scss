@@ -254,107 +254,83 @@ color: rgba(50, 68, 95, 0.7);
   }
 }
 
-@include medium-screen {
-  .pickuplist__addr {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .dtime__item {
-    font-size: 10px;
-    padding: 4px 9px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    b {
-      display: block;
-    }
-  }
-  .pickuplist__addr {
-    margin-bottom: 0;
-  }
-  .pickuptabs__search {
-    margin-bottom: 21px;
-  }
-  .pickuplist__item {
-    padding-bottom: 11px;
-    margin-bottom: 13px;
-  }
-  .pickuplist__address {
-    margin-right: 12px;
-    display: flex;
-    align-items: center;
-    &:last-child {
-      margin-right: 0;
-    }
-    img {
-      width: 11px;
-    }
-    span {
-      padding-left: 4px;
-      font-size: 12px;
-      line-height: 100%;
-    }
-  }
+@media (max-width: 1023px) {
 
-  .input-errortext {
-    line-height: 1;
-    font-size: 11px;
-  }
-  .pickuplist__header {
-    font-size: 12px;
-    line-height: 100%;
-    margin-bottom: 10px;
-  }
   .modal-content {
-    padding: 24px 16px 21px 16px;
+    padding: 34px 16px;
+    border-radius: 0;
   }
   .modal-dialog {
     margin: 18px auto;
-    width: calc(100% - 36px);
+    width: calc(100% - 36px) !important;
+  }
+  .modal_large .modal-dialog {
+    width: calc(100% - 36px) !important;
   }
   button.close {
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
     opacity: 0.7 !important;
-    right: 17px;
-    top: 17px;
+    right: 10px;
+    top: 10px;
   }
   .modal-title {
-    margin-bottom: 13px;
-    font-size: 16px;
+    margin-bottom: 18px;
+    font-size: 18px;
     line-height: 100%;
   }
-  .deliverytabs__header li {
-    height: 32px;
-    line-height: 32px;
-    font-size: 14px;
-  }
-  .deliverytabs__header {
-    margin-bottom: 16px;
-  }
-  .deliverytabs__inputcol {
-    width: 50%;
-  }
+ .modal {
+
 
   input {
-    height: 36px;
-    padding: 0 10px;
+    height: 48px;
+    padding: 0 18px;
+    font-style: 14px;
   }
 
-  label {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 4px;
-  }
-  .deliverytabs__inputcol {
-    padding: 0 3px;
-    margin-bottom: 9px;
-  }
-  .deliverytabs__inputrow {
-    margin-bottom: 10px;
-  }
-  .deliverytabs__map {
-    margin-bottom: 19px;
-  }
-}
+  ::-webkit-input-placeholder { 
+    font-size: 14px;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        font-size: 14px;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        font-size: 14px;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        font-size: 14px;
+      }
+    } 
+
+    .modal .btn {
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+    }
+    .modal .check label {
+      font-size: 11px;
+      margin-top: 17px;
+    }
+    .modal {
+      .formblock__input {
+        margin-bottom: 8px;
+      }
+    }
+    .modal-submit {
+      margin-top: 20px;
+    }
+    .modal .check label a {
+      white-space: nowrap;
+    }
+    .modaltext p {
+      margin-top: 0;font-size: 12px;
+      line-height: 140%;
+    }
+    .modaltext {
+      max-height: initial;
+    }
+    .modal_large .modal-dialog {
+      min-height: initial;
+    }
+} 
 

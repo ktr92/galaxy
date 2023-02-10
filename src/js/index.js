@@ -25,10 +25,12 @@ $(document).ready(function() {
 
 $("a.scrollTo").click(function (e) {
 	e.preventDefault()
-	var destination = $($(this).attr("href")).offset().top - 90;
+	var destination = $($(this).attr("href")).offset().top - 10;
 	$("html:not(:animated),body:not(:animated)").animate({
 		scrollTop: destination
-	}, 1100);
+	}, 600);
+	$('.mainmenu').removeClass('active')
+	$('.menubtn').removeClass('active')
 	return false;
 });
 
@@ -43,5 +45,55 @@ window.addEventListener('scroll', (event) => {
 
 });
 
+$('button.menubtn').on('click', function(e) {
+	e.preventDefault()
+	$(this).toggleClass('active')
+	$('.mainmenu').toggleClass('active')
+})
+
+function closeByClickOutside(element, button) {
+  $(document).click(function(event) {
+      if (!$(event.target).closest(`${element},${button}`).length) {
+          $(button).removeClass('active')
+          $(element).removeClass('active')
+      }
+  });
+  
+  $(document).keyup(function(e) {
+      if (e.key === "Escape") { // escape key maps to keycode `27`
+          $(button).removeClass('active')
+          $(element).removeClass('active')
+      }
+  });
+}
+
+closeByClickOutside('.mainmenu', '.menubtn')
+
+var wow = new WOW();
+wow.init();
 
 })
+
+
+$(document).ready(function (){
+
+	YaMapsShown = false; 
+
+	function showYaMaps(){
+		var script   = document.createElement("script");
+		script.type  = "text/javascript";
+		script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A29effecca8741f8c7ba884726c458ad6344e6e30dc1bc81265e789bd75832c6e&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true";
+		document.getElementById("YaMaps").appendChild(script);
+	 }
+
+	 
+	$(window).scroll(function() {
+		 if (!YaMapsShown){
+			if($(window).scrollTop() + $(window).height() > $(document).height() - 700) {      
+			 showYaMaps();
+			 YaMapsShown = true;
+			}
+		 }
+	});
+	
+ });
